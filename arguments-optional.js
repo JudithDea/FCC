@@ -1,5 +1,5 @@
 function addTogether() {
-  let firstArgument = arguments[0];
+  let firstArgument = arguments[0]; // saving this value here so it's easier accessible from a deeper layer
   if (arguments.length > 1) {
     if (typeof arguments[0] !== "number" || typeof arguments[1] !== "number") {
       return undefined;
@@ -13,7 +13,6 @@ function addTogether() {
     } else {
       // console.log(firstArgument);
       return function singleArgumentCase(num) {
-        // we are passing in the second number here as num
         if (typeof num !== "number") {
           return undefined;
         } else {
